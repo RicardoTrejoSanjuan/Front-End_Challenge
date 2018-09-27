@@ -1,0 +1,69 @@
+/* You can add global styles to this file, and also import other style files */
+@import './app/theme';
+@import url('//fonts.googleapis.com/icon?family=Material+Icons');
+
+$config: mat-typography-config();
+
+@include mat-core();
+
+@include angular-material-theme($my-theme);
+
+body {
+  font-family: mat-font-family($config);
+  font-weight: normal;
+}
+
+h1, h2, h3, h4 {
+  font-weight: normal;
+}
+
+mat-sidenav-container, mat-sidenav-content, mat-sidenav {
+  height: 100%;
+}
+
+mat-sidenav {
+  width: 250px;
+}
+
+// a {
+  // text-decoration-color: mat-color($my-theme-primary);
+  // color: mat-color($my-theme-primary);
+// }
+
+// a:hover,
+// a:active {
+//   color: lightgray;
+// }
+
+.navigation-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.icon {
+  display: inline-block;
+  height: 30px;
+  margin: 0 auto;
+  padding-right: 5px;
+  text-align: center;
+  vertical-align: middle;
+  width: 15%;
+}
+
+.label {
+  display: inline-block;
+  line-height: 30px;
+  margin: 0;
+  width: 85%;
+}
+
+.card {
+  width: 80%;
+}
+
+// .container {
+// padding: 20px;
+// width: 100%;
+// }
